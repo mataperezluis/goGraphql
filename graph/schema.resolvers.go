@@ -12,7 +12,7 @@ import (
 	"github.com/mataperezluis/goGraphql/graph/model"
 
     "github.com/mataperezluis/goGraphql/internal/links"
-    "github.com/mataperezluis/goGraphql/internal/users"
+   // "github.com/mataperezluis/goGraphql/internal/users"
 )
 
 func (r *mutationResolver) CreateLink(ctx context.Context, input model.NewLink) (*model.Link, error) {
