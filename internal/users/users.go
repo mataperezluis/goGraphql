@@ -32,11 +32,6 @@ func HashPassword(password string) (string, error) {
 	return string(bytes), err
 }
 
-//CheckPassword hash compares raw password with it's hashed values
-func CheckPasswordHash(password, hash string) bool {
-	err := bcrypt.CompareHashAndPassword([]byte(hash), []byte(password))
-	return err == nil
-}
 
 //GetUserIdByUsername check if a user exists in database by given username
 func GetUserIdByUsername(username string) (int, error) {
