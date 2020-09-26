@@ -4,17 +4,17 @@ package graph
 // will be copied through when generating and any unknown code will be moved to the end.
 
 import (
-	"context"
-    "strconv"
-	"fmt"
+        "context"
+        "strconv"
+        "fmt"
 
-	"github.com/mataperezluis/goGraphql/graph/generated"
-	"github.com/mataperezluis/goGraphql/graph/model"
+        "github.com/mataperezluis/goGraphql/graph/generated"
+        "github.com/mataperezluis/goGraphql/graph/model"
 
-    "github.com/mataperezluis/goGraphql/internal/auth"
-    "github.com/mataperezluis/goGraphql/internal/links"
-    "github.com/mataperezluis/goGraphql/internal/users"
-"github.com/mataperezluis/goGraphql/internal/pkg/jwt"
+        "github.com/mataperezluis/goGraphql/internal/auth"
+        "github.com/mataperezluis/goGraphql/internal/links"
+        "github.com/mataperezluis/goGraphql/internal/users"
+        "github.com/mataperezluis/goGraphql/pkg/jwt"
 )
 
 func (r *mutationResolver) CreateLink(ctx context.Context, input model.NewLink) (*model.Link, error) {
