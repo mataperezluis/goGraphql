@@ -34,6 +34,7 @@ func (link Link) Save() int64 {
 	log.Print("Row inserted!")
 	return id
 }
+<<<<<<< HEAD
 func GetAll() []Link {
 	stmt, err := database.Db.Prepare("select id, title, address from Links")
 	if err != nil {
@@ -59,4 +60,6 @@ func GetAll() []Link {
 	}
 	return links
 }
+=======
+>>>>>>> 4d335fa7ac53d4777c59bb74f849cf545657c68f
 
