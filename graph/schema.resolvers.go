@@ -11,7 +11,7 @@ import (
         "github.com/mataperezluis/goGraphql/graph/generated"
         "github.com/mataperezluis/goGraphql/graph/model"
 
-        "github.com/mataperezluis/goGraphql/internal/auth"
+        //"github.com/mataperezluis/goGraphql/internal/auth"
         "github.com/mataperezluis/goGraphql/internal/links"
         "github.com/mataperezluis/goGraphql/internal/users"
         "github.com/mataperezluis/goGraphql/pkg/jwt"
